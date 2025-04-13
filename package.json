@@ -1,0 +1,37 @@
+{
+  "name": "api_nodejs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx --env-file=.env src/index.ts",
+    "start": "node --env-file=.env ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^6.3.0",
+    "@fastify/cors": "^11.0.1",
+    "better-sqlite3": "^11.9.1",
+    "chalk": "^5.4.1",
+    "consola": "^3.4.2",
+    "fastify": "^5.3.0",
+    "http-status-codes": "^2.3.0",
+    "quick.db": "^9.1.7",
+    "zod": "^3.24.2"
+  },
+  "imports": {
+    "#settings/*": [
+      "./build/settings/*"
+    ],
+    "#functions/*": [
+      "./build/functions/*"
+    ],
+    "#database": ["./build/database/index.js"],
+    "#schemas": ["./database/database/schemas/*"]
+  }
+}
