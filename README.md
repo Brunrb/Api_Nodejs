@@ -2,4 +2,4 @@
 # Api_Nodejs
  
 
-Praticando com API em Nodejs Fastify TypeScript
+Praticando criação API com Nodejs Fastify TypeScript.
