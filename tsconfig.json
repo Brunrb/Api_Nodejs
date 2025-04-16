@@ -16,8 +16,10 @@
         "paths": {
             "#settings/*": ["./settings/*"],
             "functions/*": ["./functions/*"],
-            "#database": ["./database/index.ts"],
-            "#schemas/*": ["./database/schemas/*"]
+            "#services/*": ["./services/*"],
+            "#controllers/*": ["./controllers/*"],
+            "#schemas/*": ["./database/schemas/*"],
+            "#database": ["./database/index.ts"]
         }
 
 

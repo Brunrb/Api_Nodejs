@@ -31,6 +31,12 @@
     "#functions/*": [
       "./build/functions/*"
     ],
+    "#services/*": [
+      "./build/services/*"
+    ],
+    "#controllers/*": [
+      "./build/controllers/*"
+    ],
     "#database": ["./build/database/index.js"],
     "#schemas": ["./database/database/schemas/*"]
   }
